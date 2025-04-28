@@ -1,0 +1,7 @@
+{
+  "name": "Ryhmätyö",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
