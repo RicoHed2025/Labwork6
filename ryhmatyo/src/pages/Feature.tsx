@@ -1,13 +1,13 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import './Tab2.css';
+import './Feature.css';
 
-const Tab2: React.FC = () => {
+const Feature: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 2</IonTitle>
+          <IonTitle>Feature</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -22,4 +22,5 @@ const Tab2: React.FC = () => {
   );
 };
 
-export default Tab2;
+// if changed, change in app.tsx
+export default Feature;
