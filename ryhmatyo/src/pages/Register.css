@@ -1,8 +1,8 @@
 ion-Img {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    width: 150px;
+    height: 150px;
+    margin: 40px auto;
+    display: block;
 }
 
 
