@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
     if (name && email && message) {
       console.log('Form Submitted');
       console.log({ name, email, message });
-      setShowAlert(true); // Show success alert
+      setShowAlert(true);
     } else {
       alert('Please fill in all fields');
     }
