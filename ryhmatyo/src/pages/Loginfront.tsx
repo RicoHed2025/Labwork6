@@ -11,7 +11,7 @@ const Loginfront: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
           
-            <IonImg className="ion-center" src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png"></IonImg>
+            <IonImg className="ion-center" src="../running.png"></IonImg>
             
             
             <IonButton className="ion-text-center ion-padding" routerLink="/login">Login to your account</IonButton> 

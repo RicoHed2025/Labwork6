@@ -43,7 +43,7 @@ const Register: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-      <IonImg className="logo" src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png"></IonImg>
+      <IonImg className="logo" src="../running.png"></IonImg>
         <IonLoading message="Please wait, registering" duration={0} isOpen={busy}></IonLoading>
         <IonInput 
         placeholder="Email?" 
