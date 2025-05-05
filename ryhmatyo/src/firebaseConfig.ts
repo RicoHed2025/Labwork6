@@ -25,9 +25,6 @@ const firebaseConfig = {
 export async function loginUser(emailuser: string, password: string) {
 
     const email = `${emailuser}`
-    //convert username to a fake email for email auth in firebase
-    //please dont crucify me for this i didnt want to parse every username and i couldnt figure 
-    //out how to do username logins on firebase
     try {
     const res = await firebase.auth().signInWithEmailAndPassword(email,password)
     console.log(res)
