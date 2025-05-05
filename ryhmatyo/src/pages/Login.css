@@ -1,0 +1,29 @@
+ion-Img {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+ion-Button {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+ion-Input {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

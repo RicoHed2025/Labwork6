@@ -10,12 +10,16 @@ const Loginfront: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader>
-            <IonImg className="logo" src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png"></IonImg>
-            <IonButton className="loginButtons" routerLink="/login">Login to your account</IonButton> 
-            <IonButton className="loginButtons" routerLink="/register">Register an account</IonButton> 
           
-        </IonHeader>
+            <IonImg className="ion-center" src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png"></IonImg>
+            
+            
+            <IonButton className="ion-text-center ion-padding" routerLink="/login">Login to your account</IonButton> 
+            <br></br>
+            <IonButton className="ion-text-center ion-padding" routerLink="/register">Register an account</IonButton> 
+            
+          
+        
         
       </IonContent>
     </IonPage>
