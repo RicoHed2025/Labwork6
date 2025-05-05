@@ -20,6 +20,9 @@ import Register from './pages/Register';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Diary from './pages/Diary';
+import Splash from './pages/Splash'; // ← Add this at the top
+
+
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -58,6 +61,11 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
+
+
+        <Route exact path="/splash" component={Splash} />
+
+
           <Route exact path="/tab1">
             <Tab1 />
           </Route>
@@ -70,7 +78,7 @@ const App: React.FC = () => (
             <Tab3 />
           </Route>
           <Route exact path="/">
-            <Redirect to="/tab1" />
+            <Redirect to="/splash" />
           </Route>
           <Route path="/loginfront">
             <Loginfront />

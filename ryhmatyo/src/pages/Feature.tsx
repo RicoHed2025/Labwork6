@@ -1,8 +1,10 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton } from '@ionic/react';
+import { useHistory } from 'react-router-dom';
 import './Feature.css';
 
 const Feature: React.FC = () => {
+  const history = useHistory();
+
   return (
     <IonPage>
       <IonHeader>
@@ -10,17 +12,21 @@ const Feature: React.FC = () => {
           <IonTitle>Feature</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 2</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 2 page" />
+      <IonContent fullscreen className="ion-padding ion-text-center">
+        <h1>Features</h1>
+
+        <IonButton expand="block" onClick={() => history.push('/diary')}>
+          Diary
+        </IonButton>
+        <IonButton expand="block" onClick={() => history.push('/contact')}>
+          Contact
+        </IonButton>
+        <IonButton expand="block" onClick={() => history.push('/about')}>
+          About
+        </IonButton>
       </IonContent>
     </IonPage>
   );
 };
 
-// if changed, change in app.tsx
 export default Feature;
