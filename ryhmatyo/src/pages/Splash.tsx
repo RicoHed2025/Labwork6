@@ -1,31 +1,28 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
+import { IonContent, IonPage, IonImg } from '@ionic/react';
+import { useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
+import './Splash.css';
 
-const Tab1: React.FC = () => {
+const Splash: React.FC = () => {
+  const history = useHistory();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      history.replace('/loginfront'); 
+    }, 2000); 
+
+    return () => clearTimeout(timer);
+  }, [history]);
+
   return (
     <IonPage>
-        <IonHeader>
-        <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Splash screen</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+      <IonContent className="ion-text-center ion-padding">
+        <IonImg src="../public/running.png" className="splash-icon" />
+        <h1>Welcome to<br />Fitness App</h1>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Tab1;
+export default Splash;
 
-
-/*  Pls implement:
-    Redirect to Loginfront
-    Make default screen (?)
-*/

@@ -1,0 +1,22 @@
+.splash-icon {
+    width: 150px;
+    height: 150px;
+    margin: 40px auto;
+    display: block;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--ion-color-primary);
+    margin-top: 20px;
+  }
+  
+  ion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
