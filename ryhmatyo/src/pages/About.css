@@ -1,0 +1,42 @@
+ion-header {
+    --background: #3880ff;
+    --color: white;
+  }
+  
+  ion-card {
+    margin-bottom: 20px;
+  }
+  
+  ion-card-header {
+    background-color: #f4f4f4;
+  }
+  
+  ion-card-title {
+    font-size: 250%;
+    color: #3880ff;
+  }
+  
+  ion-card-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  ion-button {
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 250%;
+    color: #ffffff;
+  }
+
+  IonText {
+    font-size: 250%;
+    font-size: 1.1rem;
+  }
+
+  .textsize{
+
+        font-size: 250%;
+    
+  }

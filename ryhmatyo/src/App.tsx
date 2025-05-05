@@ -10,14 +10,18 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { body, ellipse, help, square, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Feature from './pages/Feature';
 import Tab3 from './pages/Tab3';
 import Loginfront from './pages/Loginfront';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Diary from './pages/Diary';
 import Splash from './pages/Splash'; // ← Add this at the top
+
 
 
 /* Core CSS required for Ionic components to work properly */
@@ -85,6 +89,15 @@ const App: React.FC = () => (
           <Route path="/register">
             <Register />
           </Route>
+          <Route path="/About">
+            <About />
+          </Route>
+          <Route path="/Contact">
+            <Contact />
+          </Route>
+          <Route path="/Diary">
+            <Diary />
+          </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
@@ -95,9 +108,17 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={ellipse} />
             <IonLabel>Feature</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton tab="Diary" href="/Diary">
             <IonIcon aria-hidden="true" icon={square} />
-            <IonLabel>Tab 3</IonLabel>
+            <IonLabel>Diary</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="Contact" href="/Contact">
+            <IonIcon aria-hidden="true" icon={help} />
+            <IonLabel>Contact</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="About" href="/About">
+            <IonIcon aria-hidden="true" icon={body} />
+            <IonLabel>About</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>

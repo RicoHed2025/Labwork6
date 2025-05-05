@@ -1,0 +1,17 @@
+ion-header {
+    --background: #3880ff;
+    --color: white;
+  }
+  
+  ion-item {
+    margin-bottom: 20px;
+  }
+  
+  ion-button {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-size: 200px;
+    color: #4a62cc;
+  }
